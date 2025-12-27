@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.graph_objects as go
 import plotly.express as px
+from plotly.subplots import make_subplots
 import pandas as pd
 import numpy as np
 from typing import List, Dict, Any, Optional
@@ -268,8 +269,6 @@ class DataVisualizer:
         df = pd.DataFrame(data)
         
         # Create subplots
-        from plotly.subplots import make_subplots
-        
         fig = make_subplots(
             rows=2, cols=2,
             subplot_titles=('Value Distribution', 'Category vs Value', 

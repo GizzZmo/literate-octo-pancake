@@ -7,7 +7,6 @@ Fetches data from the omni-grid API endpoint
 import requests
 import json
 from typing import Dict, List, Optional, Any
-import time
 
 
 class OmniGridFetcher:
